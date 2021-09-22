@@ -1,6 +1,6 @@
 # Team-Project-14
 
-#IDEA 1
+# IDEA 1
 
 # Problem Statement
 > The security of the client  of a bank over the call can be breached if a person has the details of the client. To ensure that it is the client himself asking for making changes or requesting something from the bank, identification of the client is a crucial and important aspect. Over the call mostly the identification is based on information previously provided by the client. But if the intruder has the details, it can be easy for him to access the bank account. Not just the bank but indeed wherever identification is required, the speech recognition can be beneficial and can make the identification process easier and secure. 
@@ -18,8 +18,9 @@
 > Identification of the clients whenever the services provided by the company are over calls.
 
 
+------------------------------------------------------------------------------------------------------------------
 
-#IDEA 2 PetPracto
+# IDEA 2 PetPracto
 
 # 1) Introduction to the problem statement
 
