@@ -78,8 +78,8 @@
 > Our web platform will be a single go-to stop for all SJSU students. Anyone can post any event that’s happening in the university and rate the event so that other people can decide whether to join or not. There will also be trending topics on the application so that students can know what’s the upcoming event. It can also be used as a discussion forum so that people can comment whatever’s on their mind and people can choose or not choose to reply to the discussion. (Something like reddit, but only for SJSU students)
 
 # 3) Approach
->	We’ll use React to design UI pages and the display
->	Backend will be done using APIs developed in Java with the help of MySQL database.
+-	We’ll use React to design UI pages and the display
+-	Backend will be done using APIs developed in Java with the help of MySQL database.
 
 # 4) Design
 >	Authentication to allow only SJSU students to register and login
