@@ -72,7 +72,7 @@
 # IDEA 3
 
 # 1) Problem Statement
-> In this project, we’ll try to solve student’s problem of trying to find events, discussions etc. related to our university. We’re currently facing a lot of difficulty in finding a single platform where we can find details related to all the events, sports, giveaways etc. We’re having to search other platforms and follow SJSU’s pages on Instagram, Facebook etc. to get the information regarding all the things mentioned above.
+> In this project, we’ll try to solve student’s problem of trying to find events, discussions etc. related to our university. We’re currently facing a lot of difficulty in finding a single platform where we can find details related to all the events, sports, giveaways etc. We have to search other platforms and follow SJSU’s pages on Instagram, Facebook etc. to get the information regarding all the things mentioned above.
 
 # 2) Abstract
 > Our web platform will be a single go-to stop for all SJSU students. Anyone can post any event that’s happening in the university and rate the event so that other people can decide whether to join or not. There will also be trending topics on the application so that students can know what’s the upcoming event. It can also be used as a discussion forum so that people can comment whatever’s on their mind and people can choose or not choose to reply to the discussion. (Something like reddit, but only for SJSU students)
