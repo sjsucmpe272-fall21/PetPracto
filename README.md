@@ -1,26 +1,6 @@
 # Team-Project-14
 
-# IDEA 1
-
-# 1) Problem Statement
-> The security of the client  of a bank over the call can be breached if a person has the details of the client. To ensure that it is the client himself asking for making changes or requesting something from the bank, identification of the client is a crucial and important aspect. Over the call mostly the identification is based on information previously provided by the client. But if the intruder has the details, it can be easy for him to access the bank account. Not just the bank but indeed wherever identification is required, the speech recognition can be beneficial and can make the identification process easier and secure. 
-
-# 2) Abstract
-> The voice can be used to identify the person, so a user's voice can be saved for our dataset, and later on a machine learning model can be trained for that dataset. Which can later on be used for identification of a user.
-
-# 3) Approach
-> Similar to face recognition, security over the voice call can be made using speech recognition. 
-> Initially the data of the user will be collected i.e voice recordings of the user.
-> This data will be the input for our machine learning model. 
-> Based on the model whenever a test dataset is provided, the model can predict if it is the user or not.
-
-# 4) Persona
-> Identification of the clients whenever the services provided by the company are over calls.
-
-
-------------------------------------------------------------------------------------------------------------------
-
-# IDEA 2 PetPracto
+# PetPracto
 
 # 1) Introduction to the problem statement
 
@@ -65,26 +45,3 @@
 
 
 # 5) Dataset link:
-
-
-------------------------------------------------------------------------------------------------------------------
-
-# IDEA 3
-
-# 1) Problem Statement
-> In this project, we’ll try to solve student’s problem of trying to find events, discussions etc. related to our university. We’re currently facing a lot of difficulty in finding a single platform where we can find details related to all the events, sports, giveaways etc. We have to search other platforms and follow SJSU’s pages on Instagram, Facebook etc. to get the information regarding all the things mentioned above.
-
-# 2) Abstract
-> Our web platform will be a single go-to stop for all SJSU students. Anyone can post any event that’s happening in the university and rate the event so that other people can decide whether to join or not. There will also be trending topics on the application so that students can know what’s the upcoming event. It can also be used as a discussion forum so that people can comment whatever’s on their mind and people can choose or not choose to reply to the discussion. (Something like reddit, but only for SJSU students)
-
-# 3) Approach
--	We’ll use React to design UI pages and the display
--	Backend will be done using APIs developed in Java with the help of MySQL database.
-
-# 4) Design
->	Authentication to allow only SJSU students to register and login
-> Components:
--	A discussion forum
--	Cultural and sports events information page
--	Class groups
--	Trending Topics 
