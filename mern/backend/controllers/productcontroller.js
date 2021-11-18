@@ -32,6 +32,31 @@ exports.getAllProducts = async (req,res)=>{
 
 }
 
+//get single product details
+exports.getProductDetails = async(req,res)=>{
+
+    let product = await Product.findById(req.params.id);
+
+    if(!product){
+        return res.status(500).json({
+            success:false,
+            message:"product not found"
+        })
+    }
+
+    res.status(200).json({
+
+        success:true,
+        product
+    })
+
+
+  
+
+}
+
+
+
 //update Product -- admin
 
 exports.updateProduct = async (req,res,next)=>{
