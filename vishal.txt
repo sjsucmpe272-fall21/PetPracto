@@ -1,0 +1,9 @@
+vishasinh gadhvi
+
+11/17/2021  
+> worked on basic structure of the webapp,
+> created a controoler to work on the med_tab, which can create, update, delete a product from the medicine tab.
+> learned in depth about JS.
+
+11/18/2021
+> exploring Node.
