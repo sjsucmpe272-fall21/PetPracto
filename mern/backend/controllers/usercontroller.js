@@ -2,6 +2,8 @@ const ErrorHander = require("../utils/errorhander");
 
 const User = require("../models/userModel");
 
+const sendToken = require("../utils/jwtToken");
+
 //register a user
 exports.registerUser = async(req,res,next)=>{
 
@@ -17,12 +19,7 @@ exports.registerUser = async(req,res,next)=>{
 
     });
 
-    const token = user.getJWTTOKEN();
-
-    res.status(201).json({
-        sucess:true,
-        token,
-    });  
+    sendToken(user,201,res);
 };
 
 
@@ -49,11 +46,6 @@ exports.loginUser = async(req,res,next)=>{
         
     }
 
-    const token = user.getJWTTOKEN();
-
-    res.status(200).json({
-        sucess:true,
-        token,
-    });  
+    sendToken(user,200,res);
 
 };
