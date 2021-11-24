@@ -17,10 +17,43 @@ exports.registerUser = async(req,res,next)=>{
 
     });
 
+    const token = user.getJWTTOKEN();
+
     res.status(201).json({
         sucess:true,
-        user,
-    })
+        token,
+    });  
+};
 
-    
-}
+
+//login user
+exports.loginUser = async(req,res,next)=>{
+    const{email,password} = req.body;
+
+    //checking if user has given pwd and email both
+    if(!email || !password){
+        return next(new ErrorHander("please fill details"),400)
+    } 
+
+    const user = await User.findOne({email}).select("+password");
+
+    if(!user){
+        return next(new ErrorHander("invalid password or email"),401);
+        
+    }
+
+    const isPasswordMatched = user.comparePassword(password);
+
+    if(!isPasswordMatched){
+        return next(new ErrorHander("invalid password or email"),401);
+        
+    }
+
+    const token = user.getJWTTOKEN();
+
+    res.status(200).json({
+        sucess:true,
+        token,
+    });  
+
+};
