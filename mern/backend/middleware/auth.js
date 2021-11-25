@@ -14,7 +14,24 @@ exports.isaAuthenticatedUser = async(req,res,next)=>{
 
     const decodedData = jwt.verify(token,process.env.JWT_SECRET);
 
-    req.User = await User.findById(decodedData.id);
+    req.user = await User.findById(decodedData.id);
 
     next();
 };
+
+
+//authorize roles
+
+exports.authorizeRoles = (...roles) =>{
+    return (req,res,next)=>{
+
+        if(!roles.includes(req.user.role)){
+            return next(
+            new ErrorHander(`Role: ${req.user.role} is not allowed to access this resource`, 403)
+            );
+        }
+
+        next();
+
+    };
+}
