@@ -120,6 +120,4 @@ export class MapsPage extends Component {
     }
 }
 
-export default GoogleApiWrapper({
-    apiKey: ''
-})(MapsPage);
+export default MapsPage

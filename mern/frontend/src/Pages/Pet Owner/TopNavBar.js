@@ -1,10 +1,9 @@
 import React from 'react'
-// import { NavLink } from 'react-router-dom'
 
 const TopNavBar = () => {
 
     return (
-        <nav class="navbar navbar-expand-lg " style={{ backgroundColor: "black", color: "white", textDecoration: "none" }}>
+        <div>
 
             <a class="navbar-brand" href="/" style={{ color: "white" }}> Pet Practo</a>
 
@@ -30,7 +29,7 @@ const TopNavBar = () => {
                     <button class="btn btn-outline-success my-2 my-sm-0" type="button" onClick={() => window.location = "/petOwnerSignIn"}>Logout</button>
                 </div>
             </div>
-        </nav>
+        </div>
     )
 }
 
