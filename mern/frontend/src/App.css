@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Indie+Flower&family=M+PLUS+1:wght@100&family=Work+Sans:wght@300&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'M PLUS 1', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .App-logo {
@@ -32,6 +39,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -95,28 +103,57 @@ nav ul li a {
   display: none;
 }
 
+form h1 {
+  text-align: left;
+  font-size: 36px;
+}
+
+.card-style {
+  box-shadow: 1px 0px 5px black;
+  margin: 30px;
+}
+
+.map-wrapper {
+  /* background-color: lightblue; */
+
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: lightskyblue;
+}
+
 @media(max-width: 786px) {
   .logo {
     position: fixed;
     top: 0;
     margin-top: 16px;
   }
+
   nav ul {
     max-height: 0px;
     background: #000;
   }
+
   nav.black ul {
     background: #000;
   }
+
   .showing {
     max-height: 34em;
   }
+
   nav ul li {
     box-sizing: border-box;
     width: 100%;
     padding: 24px;
     text-align: center;
   }
+
   .menu-icon {
     display: block;
   }
