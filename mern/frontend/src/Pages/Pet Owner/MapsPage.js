@@ -7,8 +7,13 @@ import React, { Component } from 'react';
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 
 const mapStyles = {
+    margin: "20px",
     width: '50%',
-    height: '50%'
+    height: '50%',
+    border: '2px solid black',
+    padding: "15px",
+    boxShadow: "1px 1px 25px black",
+    backgroundColor: "yellow"
 };
 
 

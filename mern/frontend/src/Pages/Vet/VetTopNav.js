@@ -1,7 +1,6 @@
 import React from 'react'
-// import { NavLink } from 'react-router-dom'
 
-const TopNavBar = () => {
+const VetTopNav = () => {
 
     return (
         <nav class="navbar navbar-expand-lg " style={{ backgroundColor: "black", color: "white", textDecoration: "none" }}>
@@ -11,16 +10,11 @@ const TopNavBar = () => {
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
                     <li class="nav-item active" >
-                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/vetHome">Home <span class="sr-only">(current)</span></a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="/mapsPage">People around you</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/bookAppointment">Schedule Appointment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/medStore">Buy Medicines</a>
+                        <a class="nav-link" href="/bookAppointment">My Appointments</a>
                     </li>
                 </ul>
                 <div style={{ display: "flex" }}>
@@ -34,4 +28,4 @@ const TopNavBar = () => {
     )
 }
 
-export default TopNavBar
+export default VetTopNav

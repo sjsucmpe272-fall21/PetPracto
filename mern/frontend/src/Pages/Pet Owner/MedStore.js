@@ -6,7 +6,7 @@ const MedStore = () => {
         <div>
             <TopNavBar />
 
-            <h1 className="container" style={{ textAlign: "left" }}>Store</h1>
+            <h1 className="container" style={{ textAlign: "left", padding: "40px 0px" }}>Store</h1>
             <div className="container" style={{ marginTop: "20px" }}>
 
                 <div className="row">

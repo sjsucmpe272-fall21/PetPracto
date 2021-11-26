@@ -11,6 +11,9 @@ import MapsPage from './Pages/Pet Owner/MapsPage'
 import MedStore from './Pages/Pet Owner/MedStore'
 import BookAppointment from './Pages/Pet Owner/BookAppointment';
 import PetOwnerLogin from './Pages/Pet Owner/PetOwnerLogin';
+import OwnerProfile from './Pages/Pet Owner/OwnerProfile';
+import OwnerPastAppointments from './Pages/Pet Owner/OwnerPastAppointments';
+
 
 function App() {
   return (
@@ -42,8 +45,18 @@ function App() {
             <BookAppointment />
           </Route>
 
+
+          <Route exact path="/ownerPastAppointments">
+            <OwnerPastAppointments />
+          </Route>
+
+
           <Route exact path="/petOwnerSignIn">
             <PetOwnerLogin />
+          </Route>
+
+          <Route exact path="/petOwnerProfile">
+            <OwnerProfile />
           </Route>
           <Route exact path="/petOwnerSignUp">
             <PetOwnerLogin />

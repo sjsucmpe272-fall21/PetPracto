@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Indie+Flower&family=M+PLUS+1:wght@100&family=Work+Sans:wght@300&display=swap');
 
 .App {
   text-align: center;
+  font-family: 'Amatic SC', cursive;
   font-family: 'Bebas Neue', cursive;
-
+  font-family: 'Indie Flower', cursive;
+  font-family: 'M PLUS 1', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .App-logo {
@@ -112,8 +115,15 @@ form h1 {
 }
 
 .map-wrapper {
-  background-color: lightblue;
+  /* background-color: lightblue; */
+
+  padding: 5px;
   display: flex;
   flex-direction: column;
   height: 100vh;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: lightskyblue;
 }
