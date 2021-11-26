@@ -58,7 +58,7 @@ exports.logout = async(req,res,next)=>{
     res.cookie("token",null,{
         expires:new Date(Date.now()),
         httpOnly:true
-        
+
     })
 
     res.status(200).json({
@@ -67,3 +67,37 @@ exports.logout = async(req,res,next)=>{
         message: "Logged out",
     })
 }
+
+//get product details
+exports.getuserDetails = async(req,res,next)=>{
+
+    const user = await User.findById(req.user.id);
+
+    res.status(200).json({
+        sucess:true,
+        user,
+    });
+};
+
+
+//update profile
+exports.updateProfile = async(req,res,next)=>{
+
+    const newUserData = {
+        name:req.body.name,
+        email:req.body.email,
+    }
+
+//will add cloudinary later
+
+const user = await User.findByIdAndUpdate(req.user.id, newUserData,{
+    new:true,
+    runValidators: true,
+    useFindAndModify: false,
+});
+
+    res.status(200).json({
+
+        sucess: true,
+    })
+};
