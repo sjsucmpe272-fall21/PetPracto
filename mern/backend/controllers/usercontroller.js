@@ -15,8 +15,6 @@ exports.registerUser = async(req,res,next)=>{
             public_id:"this is a sample id",
             url:"profilepicurl"
         }
-
-
     });
 
     sendToken(user,201,res);
