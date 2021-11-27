@@ -10,7 +10,7 @@ var Vet = new Schema(
       Age:{type:Number},
       Gender:{type:String},
       Email:{type:String},
-      Password:{type:String},
+      password:{type:String},
       Location:{type:Float},
       Phone_no:{type:Number},
       Expertise:{type:String},
@@ -21,5 +21,5 @@ var Vet = new Schema(
     }
     )
 
-const VetModel = mongoose.model('VetModel',Vet);
+const VetModel = mongoose.model('Vet',Vet);
 module.exports = VetModel
