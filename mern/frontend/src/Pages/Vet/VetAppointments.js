@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const VetAppointments = () => {
-    return (
-        <div>
-            Choose Available time when vet can have an appointment
-        </div>
-    )
-}
+  return (
+    <div>
+      <h2>No Appointments till date.</h2>
+    </div>
+  );
+};
 
-export default VetAppointments
+export default VetAppointments;

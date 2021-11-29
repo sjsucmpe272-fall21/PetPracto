@@ -1,40 +1,27 @@
-// import React from 'react'
-// import TopNavBar from './TopNavBar'
-
-// const LandingPage = () => {
-//     return (
-//         <div>
-//             <TopNavBar />
-//             Landing Page
-//         </div>
-//     )
-// }
-
-// export default LandingPage
-
 import React from 'react';
-import TopNavBar from './TopNavBar';
+// import TopNavBar from '../Pet Owner/TopNavBar';
 import { Link } from 'react-router-dom';
+import VetTopNav from './VetTopNav';
 
-const LandingPage = () => {
+const VetLandingPage = () => {
   return (
     <div>
-      <TopNavBar />
+      <VetTopNav />
 
       <div className='find-vets-div'>
         <div className='overlay'>
           <div className='overlay-display'>
-            <h1>Find and connect with Vets and Pet Owners around you.</h1>
+            <h1>Welcome, Dr. Harrison</h1>
 
-            <Link to='/mapsPage'>
+            {/* <Link to='/mapsPage'>
               <button type='button' class='btn btn-primary'>
-                Find Now
+                Show Appointments
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
-      <div className='appointments-div'>
+      {/* <div className='appointments-div'>
         <div className='overlay'>
           <div className='overlay-display'>
             <h1>
@@ -48,11 +35,13 @@ const LandingPage = () => {
             </Link>
           </div>
         </div>
-      </div>
-      <div className='meds-div'>
+      </div> */}
+      {/* <div className='meds-div'>
         <div className='overlay'>
           <div className='overlay-display'>
-            <h1> Visit our online store for everything good for your pet!</h1>
+            <h1>
+              Visit our online store and get a special discount if you're a Vet!
+            </h1>
             <Link to='/medStore'>
               <button type='button' class='btn btn-primary'>
                 View Store{' '}
@@ -60,9 +49,9 @@ const LandingPage = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default LandingPage;
+export default VetLandingPage;
