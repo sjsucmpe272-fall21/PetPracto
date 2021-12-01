@@ -25,6 +25,7 @@ import BookAppointment from './Pages/Pet Owner/BookAppointment';
 import PetOwnerLogin from './Pages/Pet Owner/PetOwnerLogin';
 import OwnerProfile from './Pages/Pet Owner/OwnerProfile';
 import OwnerPastAppointments from './Pages/Pet Owner/OwnerPastAppointments';
+import CartItems from './Pages/Pet Owner/CartItems';
 
 function App() {
   return (
@@ -69,6 +70,9 @@ function App() {
           </Route>
           <Route exact path='/petOwnerProfile'>
             <OwnerProfile />
+          </Route>
+          <Route exact path='/petOwnerCart'>
+            <CartItems />
           </Route>
           {/* <Route exact path='/vetProfile'>
             <VetProfile />
