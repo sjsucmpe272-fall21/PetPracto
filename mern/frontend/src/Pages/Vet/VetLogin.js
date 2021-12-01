@@ -111,11 +111,3 @@ export default class VetLogin extends Component {
     }
   }
 }
-
-// const VetLogin = () => {
-//     return (
-
-//     )
-// }
-
-// export default VetLogin

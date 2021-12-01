@@ -3,6 +3,11 @@ import TopNavBar from './TopNavBar'
 
 const OwnerPastAppointments = () => {
 
+
+    // const getOwnerPastAppointments= async()=>{
+
+    // }
+
     return (
         <div>
             <TopNavBar />

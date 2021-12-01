@@ -44,7 +44,8 @@ router.post('/vLogin', function (req, res, next) {
 
 router.get('/vetDetails', async (req, res) => {
   const response = await VetModel.find();
-  console.log(response);
-});
+  console.log("response", response);
+  res.send(response)
+})
 
 module.exports = router;
