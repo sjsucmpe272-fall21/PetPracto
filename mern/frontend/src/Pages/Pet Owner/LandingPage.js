@@ -12,6 +12,8 @@
 
 // export default LandingPage
 
+// console.log(this.props.location.state.email);
+
 import React from 'react';
 import TopNavBar from './TopNavBar';
 import { Link } from 'react-router-dom';
@@ -41,7 +43,12 @@ const LandingPage = () => {
               Connect with experts. Book an appointment with a professional now.
             </h1>
 
-            <Link to='/bookAppointment'>
+            <Link
+              to={{
+                pathname: '/bookAppointment',
+                state: { email: 'testemail' },
+              }}
+            >
               <button type='button' class='btn btn-primary'>
                 Book Appointment
               </button>
