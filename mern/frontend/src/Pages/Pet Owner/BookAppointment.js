@@ -17,9 +17,11 @@ const BookAppointment = () => {
             time,
             date,
             doctor,
+            email: "user1@test.com"
         }
         const response = await axios.post('http://localhost:3030/Pet/BookAppointment', payload)
         console.log("repsonse", response)
+        alert("Booked!")
     }
 
     const getVetDetails = async () => {
@@ -39,7 +41,7 @@ const BookAppointment = () => {
     };
 
     const handledoctorOnchange = (e) => {
-        console.log(e.target);
+        console.log(e.target.value);
         setDoctor(e.target.value)
 
     };
@@ -89,7 +91,7 @@ const BookAppointment = () => {
                                 name="doctor"
                             > Select Doctor
                                 {vets?.map(vet => {
-                                    return <option value={vet.VetName}>{vet.VetName}</option>;
+                                    return <option value={vet._id}>{vet.VetName}</option>;
                                 })
                                 }
                             </select>
