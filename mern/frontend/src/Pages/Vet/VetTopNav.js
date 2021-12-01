@@ -24,7 +24,7 @@ const VetTopNav = () => {
           </li>
 
           <li class='nav-item'>
-            <a class='nav-link' href='/bookAppointment'>
+            <a class='nav-link' href='/vetAppointments'>
               My Appointments
             </a>
           </li>
