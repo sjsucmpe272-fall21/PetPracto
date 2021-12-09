@@ -47,12 +47,12 @@ const OwnerProfile = () => {
           <b>Pet Age : 9 months</b>
         </p>
       </div>
-      <div style={{ backgroundColor: '' }}>
+      {/* <div style={{ backgroundColor: '' }}>
         <NavLink style={{ fontSize: '24px' }} to='/ownerPastAppointments'>
           {' '}
           View Past Appointments
         </NavLink>
-      </div>
+      </div> */}
     </div>
   );
 };

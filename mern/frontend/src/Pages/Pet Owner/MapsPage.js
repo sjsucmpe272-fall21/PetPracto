@@ -14,8 +14,6 @@ const mapStyles = {
   // backgroundColor: "yellow"
 };
 
-
-
 // let VetLocations = [
 //   { lat: 37.346629, lng: -121.915371, name: 'Dr. Harrison' },
 //   { lat: 37.350949, lng: -121.864326, name: 'Dr. Sam Wells' },
@@ -25,7 +23,6 @@ const mapStyles = {
 //   { lat: 37.750949, lng: -121.564326, name: 'Dr. SNTG' },
 // ];
 
-
 export class MapsPage extends Component {
   state = {
     showingInfoWindow: false, // Hides or shows the InfoWindow
@@ -33,7 +30,7 @@ export class MapsPage extends Component {
     selectedPlace: {},
     latitude: 23.406012,
     longitude: 79.45809, // Shows the InfoWindow to the selected place upon a marker
-    vets: []
+    vets: [],
   };
 
   componentDidMount = async () => {
@@ -41,12 +38,11 @@ export class MapsPage extends Component {
     this.getVetDetails();
   };
 
-
   getVetDetails = async () => {
-    const res = await axios.get(`http://localhost:3030/Vet/vetDetails`)
-    console.log("Vet Details", res)
-    this.setState({ vets: (res.data) })
-  }
+    const res = await axios.get(`http://localhost:3030/Vet/vetDetails`);
+    console.log('Vet Details', res);
+    this.setState({ vets: res.data });
+  };
 
   onMarkerClick = (props, marker, e) => {
     this.setState({
@@ -76,7 +72,6 @@ export class MapsPage extends Component {
       });
     } else {
       alert('Geolocation is not supported by this browser');
-
     }
   };
   onClose = (props) => {
@@ -88,17 +83,12 @@ export class MapsPage extends Component {
     }
   };
 
-
-
   render() {
     return (
       <div>
         <TopNavBar />
         <div>
-          <div
-            className='map-wrapper'
-            style={{ backgroundColor: 'lightblue' }}
-          >
+          <div className='map-wrapper' style={{ backgroundColor: 'lightblue' }}>
             <div className='location-display-wrapper'>
               <p>Location</p>
               <p>
@@ -153,5 +143,5 @@ export class MapsPage extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: '',
+  apiKey: 'AIzaSyDnMq3fdzqD0vn2D5nW582etvXRO1VxcPQ',
 })(MapsPage);

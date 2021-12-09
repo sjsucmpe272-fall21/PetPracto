@@ -21,7 +21,7 @@ const VetLandingPage = () => {
           </div>
         </div>
       </div>
-      <div className='appointments-div'>
+      {/* <div className='appointments-div'>
         <div className='overlay'>
           <div className='overlay-display'>
             <h1>
@@ -35,8 +35,8 @@ const VetLandingPage = () => {
             </Link>
           </div>
         </div>
-      </div>
-      <div className='meds-div'>
+      </div> */}
+      {/* <div className='meds-div'>
         <div className='overlay'>
           <div className='overlay-display'>
             <h1>
@@ -49,7 +49,7 @@ const VetLandingPage = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

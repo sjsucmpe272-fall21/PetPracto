@@ -1,30 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import TopNavBar from './TopNavBar';
-import axios from 'axios'
+import axios from 'axios';
 const MedStore = () => {
-
   const handleAddToCart = async (product) => {
-
-    console.log(product)
-    const res = await axios.post("http://localhost:3030/Pet/addToCartRoute", product)
-    console.log("added", res)
+    console.log(product);
+    const res = await axios.post(
+      'http://localhost:3030/Pet/addToCartRoute',
+      product
+    );
+    console.log('added', res);
 
     // alert("Added to cart")
-  }
+  };
 
   const [products, setProducts] = useState();
 
   const getProducts = async () => {
-    const res = await axios.get("http://localhost:3030/Pet/getMedProducts")
-    console.log("products", res.data)
-    setProducts(res.data)
-
-  }
+    const res = await axios.get('http://localhost:3030/Pet/getMedProducts');
+    console.log('products', res.data);
+    setProducts(res.data);
+  };
   useEffect(() => {
     getProducts();
-  }, [])
+  }, []);
   return (
-    <div >
+    <div>
       <TopNavBar />
 
       <h1
@@ -33,32 +33,33 @@ const MedStore = () => {
       >
         Store
       </h1>
-      <div className='container' style={{ display: "flex", justifyContent: "space-evenly", marginTop: '20px' }}>
-        <div className='row' style={{ wordWrap: "break-word" }}>
-
-          {
-            products?.map(p => {
-              return (
-                <div class='card col-3 card-style'>
-                  <img
-                    src='https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTl5PkH-1b4LkfxEjoUREh4CeX7Uew5Dl2QIiSXjGs1TOO4ANZJmlVOu86JK3Wo2bVuytvjJeBM0Nc3SgRAZnHWmG8gq8A2G5XdM92_n-epwgXFK_zVu9U8&usqp=CAE'
-                    class='card-img-top'
-                    alt='...'
-                  />
-                  <div class='card-body'>
-                    <h5 class='card-title'>{p.name}</h5>
-                    <p class='card-text'> {p.description}</p>
-                    <p class='card-text'> ${p.price}</p>
-                    <button onClick={() => handleAddToCart(p)} class='btn btn-primary'>
-                      Add to Cart
-                    </button>
-                  </div>
+      <div
+        className='container'
+        style={{
+          display: 'flex',
+          justifyContent: 'space-evenly',
+          marginTop: '20px',
+        }}
+      >
+        <div className='row' style={{ wordWrap: 'break-word' }}>
+          {products?.map((p) => {
+            return (
+              <div class='card col-3 card-style'>
+                <img src={p.url} class='card-img-top' alt='...' />
+                <div class='card-body'>
+                  <h5 class='card-title'>{p.name}</h5>
+                  <p class='card-text'> {p.description}</p>
+                  <p class='card-text'> ${p.price}</p>
+                  <button
+                    onClick={() => handleAddToCart(p)}
+                    class='btn btn-primary'
+                  >
+                    Add to Cart
+                  </button>
                 </div>
-
-              )
-
-
-            })}
+              </div>
+            );
+          })}
         </div>
       </div>
 

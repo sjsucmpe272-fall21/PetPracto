@@ -53,30 +53,29 @@ const TopNavBar = () => {
       </a>
 
       <div class='collapse navbar-collapse' id='navbarTogglerDemo03'>
-        <div>
-          <ul class='navbar-nav mr-auto mt-2 mt-lg-0' >
-            <li class='nav-item active'>
-              <a class='nav-link' href='/'>
-                Home <span class='sr-only'>(current)</span>
-              </a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='/mapsPage'>
-                People around you
-              </a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='/bookAppointment'>
-                Schedule Appointment
-              </a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='/medStore'>
-                Buy Medicines
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class='navbar-nav mr-auto mt-2 mt-lg-0'>
+          <li class='nav-item active'>
+            <a class='nav-link' href='/'>
+              Home <span class='sr-only'>(current)</span>
+            </a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link' href='/mapsPage'>
+              People around you
+            </a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link' href='/bookAppointment'>
+              Schedule Appointment
+            </a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link' href='/medStore'>
+              Buy Medicines
+            </a>
+          </li>
+        </ul>
+
         <div style={{ display: 'flex' }}>
           <a class='nav-link' href='/petOwnerProfile'>
             Profile <span class='sr-only'>(current)</span>
@@ -93,7 +92,6 @@ const TopNavBar = () => {
             Logout
           </button>
         </div>
-
       </div>
     </nav>
   );

@@ -26,7 +26,7 @@ const LandingPage = () => {
       <div className='find-vets-div'>
         <div className='overlay'>
           <div className='overlay-display'>
-            <h1>Find and connect with Vets and Pet Owners around you.</h1>
+            <h1>Find and connect with Vets around you.</h1>
 
             <Link to='/mapsPage'>
               <button type='button' class='btn btn-primary'>
