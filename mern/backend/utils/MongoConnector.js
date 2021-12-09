@@ -8,8 +8,7 @@ var options = {
 };
 
 // please enter the uri sent on discord
-let uri =
-  'mongodb+srv://root123:root123@272mern.eg02c.mongodb.net/272mern?retryWrites=true&w=majority';
+let uri = '';
 
 var connection = mongoose.connect(uri, options, (err, res) => {
   if (err) {

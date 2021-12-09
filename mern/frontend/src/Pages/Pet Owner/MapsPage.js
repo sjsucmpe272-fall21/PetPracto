@@ -143,5 +143,5 @@ export class MapsPage extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyDnMq3fdzqD0vn2D5nW582etvXRO1VxcPQ',
+  apiKey: '',
 })(MapsPage);
